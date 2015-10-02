@@ -1,8 +1,10 @@
 {
-  "name": "angular2-seed",
-  "version": "0.0.0",
-  "description": "Seed for Angular 2 apps",
-  "repository": "https://github.com/mgechev/angular2-seed",
+  "name": "WebApp",
+  "version": "0.0.1",
+  "description": "Web App Core in Angular 2",
+  "repository": {
+    "url": "https://github.com/natarajanmca11/WebApp.git"
+  },
   "scripts": {
     "build.dev": "gulp build.dev",
     "build.test": "gulp build.test",
@@ -12,7 +14,7 @@
     "test": "gulp test",
     "test-dev": "gulp test-dev"
   },
-  "author": "Minko Gechev <mgechev>",
+  "author": "Natarajan Ganapathi",
   "license": "MIT",
   "devDependencies": {
     "connect-livereload": "^0.5.3",
