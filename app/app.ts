@@ -4,6 +4,7 @@ import {RouteConfig, ROUTER_DIRECTIVES, ROUTER_BINDINGS} from 'angular2/router';
 
 import {Home} from './components/home/home';
 import {About} from './components/about/about';
+import {Popup} from './components/popup/popup';
 import {NameList} from './services/name_list';
 
 @Component({
@@ -12,7 +13,8 @@ import {NameList} from './services/name_list';
 })
 @RouteConfig([
   { path: '/', component: Home, as: 'home' },
-  { path: '/about', component: About, as: 'about' }
+  { path: '/about', component: About, as: 'about' },
+  { path: '/popup', component: Popup, as: 'popup' }
 ])
 @View({
   templateUrl: './app.html',

@@ -17,6 +17,8 @@
         "./app/components/about/about_spec.ts",
         "./app/components/home/home.ts",
         "./app/components/home/home_spec.ts",
+        "./app/components/popup/popup.ts",
+        "./modules/authendication/index.ts",
         "./app/init.ts",
         "./app/services/name_list.ts",
         "./app/services/name_list_spec.ts",
