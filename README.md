@@ -1,5 +1,7 @@
 # Introduction
 
+[![Join the chat at https://gitter.im/natarajanmca11/WebApp](https://badges.gitter.im/natarajanmca11/WebApp.svg)](https://gitter.im/natarajanmca11/WebApp?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Angular 2 Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://github.com/mgechev/angular2-style-guide)
 [![Build Status](https://travis-ci.org/mgechev/angular2-seed.svg?branch=master)](https://travis-ci.org/mgechev/angular2-seed)
 [![Build Status](https://ci.appveyor.com/api/projects/status/github/mgechev/angular2-seed?svg=true)](https://ci.appveyor.com/project/mgechev/angular2-seed)
