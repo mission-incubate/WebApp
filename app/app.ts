@@ -6,6 +6,7 @@ import {Home} from './components/home/home';
 import {About} from './components/about/about';
 import {Popup} from './components/popup/popup';
 import {NameList} from './services/name_list';
+import {Core } from './core/index'
 
 @Component({
   selector: 'app',
@@ -14,7 +15,8 @@ import {NameList} from './services/name_list';
 @RouteConfig([
   { path: '/', component: Home, as: 'home' },
   { path: '/about', component: About, as: 'about' },
-  { path: '/popup', component: Popup, as: 'popup' }
+  { path: '/popup', component: Popup, as: 'popup' },
+  { path: '/core', component: Core, as : 'core'}
 ])
 @View({
   templateUrl: './app.html',
