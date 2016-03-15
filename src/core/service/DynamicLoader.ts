@@ -16,7 +16,7 @@ import {ROUTER_DIRECTIVES
 
 @Component(
     {
-        selector: 'demo-app',
+        selector: 'gn-app',
         templateUrl: './demo-app.html',
         directives: [ROUTER_DIRECTIVES]
     })
@@ -29,7 +29,7 @@ import {ROUTER_DIRECTIVES
     })
 ])
 
-class MyDemoApp {
+class Application {
     router: Router;
     location: Location;
 
