@@ -1,9 +1,9 @@
 {
-  "name": "angular2-seed",
+  "name": "webapp",
   "version": "0.0.0",
-  "description": "Seed for Angular 2 apps",
+  "description": "Web App using Angular 2",
   "repository": {
-    "url": "https://github.com/mgechev/angular2-seed"
+    "url": "https://github.com/natarajanmca11/WebApp"
   },
   "scripts": {
     "build.dev": "gulp build.dev",
@@ -29,7 +29,7 @@
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update"
   },
-  "author": "Minko Gechev <mgechev>",
+  "author": "Natarajan Ganapathi",
   "license": "MIT",
   "devDependencies": {
     "async": "^1.4.2",
@@ -73,7 +73,7 @@
     "karma-coverage": "^0.5.3",
     "karma-ie-launcher": "^0.2.0",
     "karma-jasmine": "~0.3.6",
-    "karma-mocha-reporter": "^1.1.1",
+    "karma-mocha-reporter": "~2.0.0",
     "karma-phantomjs-launcher": "^1.0.0",
     "merge-stream": "^1.0.0",
     "ng2lint": "0.0.10",
