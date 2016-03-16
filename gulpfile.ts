@@ -12,7 +12,8 @@ loadTasks(PROJECT_TASKS_DIR);
 gulp.task('build.dev', (done: any) =>
   runSequence('clean.dev',
               'tslint',
-              'css-lint',
+              'build.sass.src',
+              //'css-lint',
               'build.assets.dev',
               'build.html_css',
               'build.js.dev',
@@ -31,6 +32,7 @@ gulp.task('build.dev.watch', (done: any) =>
 gulp.task('build.e2e', (done: any) =>
   runSequence('clean.dev',
               'tslint',
+              'build.sass.src',
               'build.assets.dev',
               'build.js.e2e',
               'build.index.dev',
@@ -41,7 +43,8 @@ gulp.task('build.e2e', (done: any) =>
 gulp.task('build.prod', (done: any) =>
   runSequence('clean.prod',
               'tslint',
-              'css-lint',
+              'build.sass.src',
+              //'css-lint',
               'build.assets.prod',
               'build.html_css',
               'copy.js.prod',
