@@ -107,3 +107,10 @@ gulp.task('test', (done: any) =>
   runSequence('build.test',
               'karma.start',
               done));
+
+// --------------
+// Serve dev
+gulp.task('serve.prod', (done: any) =>
+  runSequence('build.prod',
+              'server.start',
+              done));

@@ -6,7 +6,6 @@ import {LayoutComponent} from './component/layout/layout.component';
     selector: 'gn-app',
     viewProviders: [],
     moduleId: module.id,
-    //templateUrl: './app.component.html',
     template: '<gn-layout></gn-layout>',
     directives: [ROUTER_DIRECTIVES, LayoutComponent]
 })
