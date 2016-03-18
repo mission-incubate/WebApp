@@ -61,7 +61,8 @@ export class SeedConfig {
     { src: 'rxjs/bundles/Rx.js', inject: 'libs' },
     { src: 'angular2/bundles/angular2.js', inject: 'libs' },
     { src: 'angular2/bundles/router.js', inject: 'libs' },
-    { src: 'angular2/bundles/http.js', inject: 'libs' }
+    { src: 'angular2/bundles/http.js', inject: 'libs' },
+    { src: 'bootstrap-material-design/css/bootstrap-material-design.css', inject: true }
   ]);
 
   PROD_NPM_DEPENDENCIES: InjectableDependency[] = normalizeDependencies([
@@ -69,7 +70,8 @@ export class SeedConfig {
     { src: 'reflect-metadata/Reflect.js', inject: 'shims' },
     { src: 'es6-shim/es6-shim.min.js', inject: 'shims' },
     { src: 'systemjs/dist/system.js', inject: 'shims' },
-    { src: 'angular2/bundles/angular2-polyfills.min.js', inject: 'libs' }
+    { src: 'angular2/bundles/angular2-polyfills.min.js', inject: 'libs' },
+    { src: 'bootstrap-material-design/css/bootstrap-material-design.css', inject: true }
   ]);
 
   // Declare local files that needs to be injected
