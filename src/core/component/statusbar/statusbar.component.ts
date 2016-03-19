@@ -5,7 +5,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
   selector: 'gn-statusbar',
   moduleId: module.id,
   templateUrl: './statusbar.component.html',
-  styleUrls: ['./statusbar.component.scss'],
+  styleUrls: ['./statusbar.component.css'],
   directives: [ROUTER_DIRECTIVES]
 })
 export class StatusbarComponent {}

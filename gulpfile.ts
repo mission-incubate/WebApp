@@ -44,6 +44,7 @@ gulp.task('build.e2e', (done: any) =>
 gulp.task('build.prod', (done: any) =>
   runSequence('clean.prod',
               'tslint',
+              'build.bmd.sass',
               'build.sass.src',
               //'css-lint',
               'build.assets.prod',

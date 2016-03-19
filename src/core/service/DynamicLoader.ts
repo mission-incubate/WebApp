@@ -16,8 +16,8 @@ import {ROUTER_DIRECTIVES
 
 @Component(
     {
-        selector: 'gn-app',
-        templateUrl: './demo-app.html',
+        selector: 'gn-lazyloader',
+        /*templateUrl: './demo-app.html',*/
         directives: [ROUTER_DIRECTIVES]
     })
 
