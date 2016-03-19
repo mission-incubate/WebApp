@@ -17,10 +17,8 @@ import {ROUTER_DIRECTIVES
 @Component(
     {
         selector: 'gn-lazyloader',
-        /*templateUrl: './demo-app.html',*/
         directives: [ROUTER_DIRECTIVES]
     })
-
 @RouteConfig([
     new AsyncRoute({
         path: '/lazy',
