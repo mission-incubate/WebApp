@@ -6,7 +6,7 @@ import {LayoutComponent} from './component/layout/layout.component';
     selector: 'gn-app',
     viewProviders: [],
     moduleId: module.id,
-    template: '<gn-layout></gn-layout>',
+    template: '<gn-layout class="mdb-layout-container"></gn-layout>',
     directives: [ROUTER_DIRECTIVES, LayoutComponent]
 })
 // @RouteConfig([
