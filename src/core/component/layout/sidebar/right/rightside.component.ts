@@ -5,7 +5,7 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
     selector: 'gn-right',
     moduleId: module.id,
     template: '<div>Right side </div>',
-    styles : [],
+    styleUrls : ['./rightside.component.scss'],
     directives: [ROUTER_DIRECTIVES]
 })
 export class RightSidebarmponent { }

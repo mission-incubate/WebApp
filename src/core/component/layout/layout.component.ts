@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component } from 'angular2/core';
 import {ROUTER_DIRECTIVES} from 'angular2/router';
 import {HeaderComponent} from './header/header.component';
 import {ContainerComponent} from './container/container.component';
@@ -13,4 +13,4 @@ import { RightSidebarmponent} from './sidebar/right/rightside.component';
     styleUrls: ['./layout.component.css'],
     directives: [ROUTER_DIRECTIVES, HeaderComponent, LeftSidebarmponent, ContainerComponent, RightSidebarmponent, FooterComponent]
 })
-export class LayoutComponent { }
+export class LayoutComponent {}

@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {ROUTER_DIRECTIVES/*, RouteConfig*/} from 'angular2/router';
 import {LayoutComponent} from './component/layout/layout.component';
 
@@ -6,11 +6,28 @@ import {LayoutComponent} from './component/layout/layout.component';
     selector: 'gn-app',
     viewProviders: [],
     moduleId: module.id,
-    template: '<gn-layout class="mdb-layout-container"></gn-layout>',
+    template:
+    `<gn-layout class="mdb-layout-container"
+        [style.width.px]="width" 
+        [style.height.px]="height">
+        (window:resize)="gnOnResize($event)"
+        </gn-layout>
+    `,
     directives: [ROUTER_DIRECTIVES, LayoutComponent]
 })
 // @RouteConfig([
 //   { path: '/',      name: 'Layout',  component: LayoutComponent  },
 //   { path: '/about', name: 'About', component: AboutComponent }
 // ])
-export class Application { }
+export class Application implements OnInit {
+    height: number = window.innerHeight;
+    width: number = window.innerWidth;
+
+    ngOnInit() {
+        this.gnOnResize();
+    }
+    private gnOnResize() {
+        this.height = window.innerHeight;
+        this.width = window.innerWidth;
+    }
+}
