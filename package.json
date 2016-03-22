@@ -33,8 +33,10 @@
   "author": "Natarajan Ganapathi",
   "license": "MIT",
   "devDependencies": {
+    "angular2-materialize": "^2.0.1",
     "async": "^1.4.2",
     "autoprefixer": "^6.3.3",
+    "bootstrap-material-design": "github:fezvrasta/bootstrap-material-design#v4-dev",
     "browser-sync": "~2.10.1",
     "chalk": "^1.1.1",
     "colorguard": "^1.0.1",
@@ -78,6 +80,7 @@
     "karma-mocha-reporter": "^1.1.1",
     "karma-phantomjs-launcher": "^1.0.0",
     "merge-stream": "^1.0.0",
+    "ng2-material": "^0.2.12",
     "ng2lint": "0.0.10",
     "open": "0.0.5",
     "phantomjs-prebuilt": "^2.1.4",
@@ -106,7 +109,6 @@
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.11",
-    "bootstrap-material-design": "fezvrasta/bootstrap-material-design#v4-dev",
     "es6-module-loader": "^0.17.8",
     "es6-promise": "^3.1.2",
     "es6-shim": "^0.35.0",
