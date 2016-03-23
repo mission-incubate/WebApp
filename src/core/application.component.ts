@@ -7,7 +7,7 @@ import {LayoutComponent} from './component/layout/layout.component';
     viewProviders: [],
     moduleId: module.id,
     template:
-    `<gn-layout class="mdb-layout-container"
+    `<gn-layout [ngClass] = "'container-fluid'"
         [style.width.px]="width" 
         [style.height.px]="height">
         (window:resize)="gnOnResize($event)"

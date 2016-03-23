@@ -13,4 +13,4 @@ import { RightSidebarmponent} from './sidebar/right/rightside.component';
     styleUrls: ['./layout.component.css'],
     directives: [ROUTER_DIRECTIVES, HeaderComponent, LeftSidebarmponent, ContainerComponent, RightSidebarmponent, FooterComponent]
 })
-export class LayoutComponent {}
+export class LayoutComponent { }
