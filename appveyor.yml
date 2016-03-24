@@ -10,7 +10,7 @@ environment:
   nodejs_version: "4.1.0"
   # https://github.com/DefinitelyTyped/tsd#tsdrc
   # Token has no scope (read-only access to public information)
-  TSD_GITHUB_TOKEN: "9b18c72997769f3867ef2ec470e626d39661795d"
+  # TSD_GITHUB_TOKEN: "9b18c72997769f3867ef2ec470e626d39661795d"
 
 build: off
 
@@ -37,7 +37,7 @@ test_script:
 
 notifications:
   - provider: Webhook
-    url: https://webhooks.gitter.im/e/cfd8ce5ddee6f3a0b0c9
+    url: https://webhooks.gitter.im/e/750fc1e4e022a0c5e06d
     on_build_success: false
     on_build_failure: true
     on_build_status_changed: true
