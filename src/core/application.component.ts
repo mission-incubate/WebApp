@@ -6,8 +6,13 @@ import {LayoutComponent} from './component/layout/layout.component';
     selector: 'gn-app',
     viewProviders: [],
     moduleId: module.id,
+    styles: [
+        `:host {
+            display: block;
+        }`
+    ],
     template:
-    `<gn-layout class="mdb-layout-container"
+    `<gn-layout class="container-fluid"
         [style.width.px]="width" 
         [style.height.px]="height">
         (window:resize)="gnOnResize($event)"
