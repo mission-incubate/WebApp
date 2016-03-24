@@ -36,6 +36,7 @@
     "angular2-materialize": "^2.0.1",
     "async": "^1.4.2",
     "autoprefixer": "^6.3.3",
+    "bootstrap": "github:twbs/bootstrap#v4-dev",
     "bootstrap-material-design": "github:fezvrasta/bootstrap-material-design#v4-dev",
     "browser-sync": "~2.10.1",
     "chalk": "^1.1.1",

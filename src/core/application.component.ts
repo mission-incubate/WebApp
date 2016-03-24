@@ -12,7 +12,11 @@ import {LayoutComponent} from './component/layout/layout.component';
         }`
     ],
     template:
+<<<<<<< HEAD
     `<gn-layout class="container-fluid"
+=======
+    `<gn-layout [ngClass] = "'container-fluid'"
+>>>>>>> eedfe18612dae24f28099ea8350c1770442b62f9
         [style.width.px]="width" 
         [style.height.px]="height">
         (window:resize)="gnOnResize($event)"

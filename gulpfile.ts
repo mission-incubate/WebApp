@@ -14,7 +14,11 @@ gulp.task('build.dev', (done: any) =>
               'tslint',
               //'build.bmd.sass',
               'build.sass.src',
+<<<<<<< HEAD
               //'css-lint', Remove the comment once Memory leak issue fixed.
+=======
+              //'css-lint',
+>>>>>>> eedfe18612dae24f28099ea8350c1770442b62f9
               'build.assets.dev',
               'build.html_css',
               'build.js.dev',
