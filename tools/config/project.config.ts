@@ -11,7 +11,7 @@ export class ProjectConfig extends SeedConfig {
     let additional_deps: InjectableDependency[] = [
       // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
       // {src: 'lodash/lodash.min.js', inject: 'libs'},
-      {src:'ng2-material/all.js', inject:'shims'}
+      //{src:'ng2-material/all.js', inject:'shims'}
     ];
 
     const seedDependencies = this.NPM_DEPENDENCIES;

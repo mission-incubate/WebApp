@@ -1,14 +1,16 @@
-import {provide, enableProdMode} from 'angular2/core';
-import {bootstrap} from 'angular2/platform/browser';
-import {ROUTER_PROVIDERS, APP_BASE_HREF} from 'angular2/router';
+import { provide, enableProdMode} from 'angular2/core';
+import { HTTP_PROVIDERS } from 'angular2/http';
+import { bootstrap} from 'angular2/platform/browser';
+import { ROUTER_PROVIDERS, APP_BASE_HREF} from 'angular2/router';
 //import {AppComponent} from './app/components/app.component';
-import {Application} from './core/application.component';
+import {Application} from './core/component/app/app.component';
+import {MATERIAL_PROVIDERS } from 'ng2-material/all';
 
 if ('<%= ENV %>' === 'prod') { enableProdMode(); }
 
 bootstrap(Application, [
-  ROUTER_PROVIDERS,
-  provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' })
+    ROUTER_PROVIDERS, MATERIAL_PROVIDERS, HTTP_PROVIDERS,
+    provide(APP_BASE_HREF, { useValue: '<%= APP_BASE %>' })
 ]);
 
 // In order to start the Service Worker located at "./sw.js"
