@@ -24,6 +24,7 @@ export class ProjectConfig extends SeedConfig {
       //{ src: `${this.ASSETS_SRC}/bootstrap-material-design.css`, inject: true, vendor : false}, //Include if you want complete styles.
       { src: `${this.ASSETS_SRC}/material.css`, inject: true },
       { src: `${this.ASSETS_SRC}/main.css`, inject: true },
+      { src: `${this.APP_BASE}node_modules/ng2-material/font/MaterialIcons-Regular.eot`, inject:false }
     ];
   }
 }
