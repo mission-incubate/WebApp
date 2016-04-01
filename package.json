@@ -53,6 +53,7 @@
     "gulp": "^3.9.1",
     "gulp-cached": "^1.1.0",
     "gulp-concat": "^2.6.0",
+    "gulp-cordova-plugin": "^1.5.0",
     "gulp-filter": "^4.0.0",
     "gulp-inject": "^4.0.0",
     "gulp-inline-ng2-template": "^1.1.2",

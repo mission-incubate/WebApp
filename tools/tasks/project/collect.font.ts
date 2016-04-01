@@ -1,6 +1,6 @@
 import * as gulp from 'gulp';
 import {join} from 'path';
-import {APP_BASE, ASSETS_SRC} from '../../config';
+import { ASSETS_SRC} from '../../config';
 import * as gulpLoadPlugins from 'gulp-load-plugins';
 
 const plugins = <any>gulpLoadPlugins();
@@ -11,5 +11,5 @@ export = () => {
         .pipe(plugins.print(function(filepath: string) {
             return 'built: ' + filepath;
         }))
-        .pipe(gulp.dest(ASSETS_SRC));
+        .pipe(gulp.dest(join(ASSETS_SRC, 'fonts')));
 }

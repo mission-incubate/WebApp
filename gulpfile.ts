@@ -117,3 +117,10 @@ gulp.task('serve.prod', (done: any) =>
   runSequence('build.prod',
               'server.start',
               done));
+              
+              
+// --------------
+// Cordova dev
+gulp.task('cordova.dev', (done: any) =>
+  runSequence('build.dev',
+              done));
