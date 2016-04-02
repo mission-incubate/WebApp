@@ -8,7 +8,7 @@ import {Media, SidenavService, MATERIAL_DIRECTIVES } from 'ng2-material/all';
     selector: 'gn-app',
     viewProviders: [],
     moduleId: module.id,
-    templateUrl: `app.component.html`,
+    templateUrl: './app.component.html',
     directives: [MATERIAL_DIRECTIVES]
 })
 export class Application {
