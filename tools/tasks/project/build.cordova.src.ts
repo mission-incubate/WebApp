@@ -1,6 +1,6 @@
 import * as gulp from 'gulp';
 import {join} from 'path';
-import { APP_DEST, Access, Options, Preference, Description, Version, Author, RawXml, CORDOVA_DEST  } from '../../config';
+import { APP_DEST, Access, Options, Preference, Description, Version, Author, RawXml, CORDOVA_DEST, AndroidOptions  } from '../../config';
 
 const create = require('gulp-cordova-create');
 const pref = require('gulp-cordova-preference');
@@ -21,7 +21,7 @@ export = () => {
         .pipe(description(Description))
         .pipe(author(Author.Name, Author.Email, Author.WebSite))
         .pipe(xml(RawXml))
-        .pipe(android())
+        .pipe(android(AndroidOptions))
         .pipe(gulp.dest(CORDOVA_DEST))
         ;
 }

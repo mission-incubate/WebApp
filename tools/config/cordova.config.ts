@@ -31,4 +31,11 @@ export class CordovaConfig extends ProjectConfig {
         '<access origin="http://www.github.com" />'
     ];
     Author: any = { Name: 'Natarajan Ganapathi', Email: 'natarajanmca11@gmail.com', WebSite: 'https://github.com/natarajanmca11' };
+
+    AndroidOptions: any = {
+        release: this.ENV === 'prod',
+        storeFile: '/Path/to/key.keystore',
+        keyAlias: 'my_alias'
+    };
+    IOSOptions: any = {};
 }
