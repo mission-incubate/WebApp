@@ -32,10 +32,15 @@ export class CordovaConfig extends ProjectConfig {
     ];
     Author: any = { Name: 'Natarajan Ganapathi', Email: 'natarajanmca11@gmail.com', WebSite: 'https://github.com/natarajanmca11' };
 
+    Plugins: any = { 'org.apache.cordova.camera': 'latest' };
+    /****************************************************/
     AndroidOptions: any = {
         release: this.ENV === 'prod',
-        storeFile: '/Path/to/key.keystore',
-        keyAlias: 'my_alias'
+        storeFile: '',
+        keyAlias: ''
     };
+    AndroidPlugins: any = this.Plugins;
+    /****************************************************/
     IOSOptions: any = {};
+    IOSPlugins: any = this.Plugins;
 }
