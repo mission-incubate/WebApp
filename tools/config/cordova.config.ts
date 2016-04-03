@@ -8,9 +8,9 @@ export class CordovaConfig extends ProjectConfig {
     constructor() {
         super();
     }
-
+    CORDOVA_DEST = `${this.DIST_DIR}/webapp`;
     Options: any = {
-        dir: 'webapp',
+        dir: this.CORDOVA_DEST,
         id: 'com.webapp.first',
         name: 'Web App'
     };
@@ -23,7 +23,7 @@ export class CordovaConfig extends ProjectConfig {
         'AndroidLaunchMode': 'singleTop',
         'ShowTitle': true
     };
-    Version: string = '0.0.1'; //Todo : retrive from package.json
+    Version: any = this.VERSION; 
     Description: string = 'This is my first Angular 2 application';
     RawXml: string[] = [
         '<access origin="http://www.google.com" />',

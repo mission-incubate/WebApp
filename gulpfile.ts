@@ -123,4 +123,5 @@ gulp.task('serve.prod', (done: any) =>
 // Cordova dev
 gulp.task('cordova.dev', (done: any) =>
   runSequence('build.dev',
+              'build.cordova.src',
               done));
